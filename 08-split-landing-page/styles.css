@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(95, 95, 95); */
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  opacity: 0.9;
+  transition: width ease 0.5s;
+}
+
+.split.left {
+  background: url("https://sebelemobiles.com/wp-content/uploads/2021/02/playstation-5-sony.jpg")
+    no-repeat center center/cover;
+}
+
+.split.right {
+  background: url("https://cdn.mos.cms.futurecdn.net/bJiSP37sSBbuw6KJ4nGyRN-1200-80.jpg")
+    no-repeat center center/cover;
+}
+
+.split.left::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.split.right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(9, 9, 15);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.btn {
+  border: white 2px solid;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+}
+.left .btn:hover {
+  background-color: rgb(66, 66, 226);
+  border: rgb(66, 66, 226) 2px solid;
+}
+
+.right .btn:hover {
+  background-color: rgb(1, 99, 21);
+  border: rgb(1, 99, 21) 2px solid;
+}
+
+.left:hover {
+  width: 70vw;
+  transition: width ease 0.5s;
+}
+.right:hover {
+  width: 70vw;
+  transition: width ease 0.5s;
+}

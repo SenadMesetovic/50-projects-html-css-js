@@ -61,9 +61,17 @@ h1 {
   height: 2rem;
   border: none;
   border-radius: 5px;
-  background-color: rgb(157, 203, 241);
+  background-color: lightblue;
   color: #000;
   margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(135, 170, 182);
+}
+.btn:active {
+  transform: scale(0.99);
 }
 
 input:focus,
@@ -90,6 +98,12 @@ input:valid {
   /* transition: top ease 1000ms; */
 }
 
-.form-control .up {
+/* .form-control .up {
+  transform: translateY(-1.2rem);
+} */
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
   transform: translateY(-1.2rem);
 }

@@ -1,28 +1,21 @@
 const labels = document.querySelectorAll("label");
 const inputs = document.querySelector("input");
+const formControls = document.querySelectorAll(".form-control");
 let count = 1;
 labels.forEach((label) => {
   label.innerHTML = label.innerText
     .split("")
-    .map((letter) => `<span>${letter}</span>`)
+    .map(
+      (letter, index) =>
+        `<span style="transition-delay:${20 * index}ms">${letter}</span>`
+    )
     .join("");
+
+  label.addEventListener("click", () => {});
 });
 
-const spans = document.querySelectorAll(".form-control span");
-console.log(spans);
-
-spans.forEach((span) => {
-  span.classList.toggle("up");
-});
-
-function performAnimation() {
-  spans.forEach((span) => {
-    setTimeout(() => {
-      span.classList.toggle("up");
-    }, 50 * count++);
+formControls.forEach((formControl) => {
+  formControl.children[1].addEventListener("click", () => {
+    formControl.children[0].focus();
   });
-}
-
-inputs.addEventListener("click", () => {
-  performAnimation();
 });

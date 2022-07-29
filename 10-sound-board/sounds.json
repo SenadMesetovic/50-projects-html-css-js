@@ -1,0 +1,26 @@
+[
+  {
+    "name": "applause",
+    "path": "./sounds/applause.mp3"
+  },
+  {
+    "name": "boo",
+    "path": "./sounds/boo.mp3"
+  },
+  {
+    "name": "gasp",
+    "path": "./sounds/gasp.mp3"
+  },
+  {
+    "name": "tada",
+    "path": "./sounds/tada.mp3"
+  },
+  {
+    "name": "victory",
+    "path": "./sounds/victory.mp3"
+  },
+  {
+    "name": "wrong",
+    "path": "./sounds/wrong.mp3"
+  }
+]

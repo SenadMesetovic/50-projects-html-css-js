@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: darkslategray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 40px;
+}
+button {
+  padding: 10px 25px;
+  background-color: rgb(198, 222, 250);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: steelblue;
+}
+button:active {
+  transform: scale(0.98);
+}
